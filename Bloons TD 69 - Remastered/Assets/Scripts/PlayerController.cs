@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 8;
+
+    public PlayableCharacter character;
 
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
      
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
         float h = Input.GetAxis("Horizontal");
 
         Vector2 pos = transform.position;
 
-        pos.x += h * speed * Time.deltaTime;
+        pos.x += h * character.Speed * Time.deltaTime;
 
         transform.position = pos;
 
