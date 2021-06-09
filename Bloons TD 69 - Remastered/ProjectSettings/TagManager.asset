@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2832488611
+    locked: 0
+  - name: Monkey Hands Layer
+    uniqueID: 406792205
+    locked: 0
+  - name: Monkey Layer
+    uniqueID: 1304176199
+    locked: 0
+  - name: Monkey AddOns Layer
+    uniqueID: 3793297889
+    locked: 0

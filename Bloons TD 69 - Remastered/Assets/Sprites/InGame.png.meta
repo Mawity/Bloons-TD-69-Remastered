@@ -98,6 +98,9 @@ TextureImporter:
   - first:
       213: 3730518753005238049
     second: glue_effect_regen_02
+  - first:
+      213: -6140824230732031208
+    second: glue_gunner_bloon_dissolver_gauge
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -253,9 +256,9 @@ TextureImporter:
       name: dart_monkey
       rect:
         serializedVersion: 2
-        x: 1444
+        x: 1445
         y: 1181
-        width: 110
+        width: 109
         height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -379,9 +382,9 @@ TextureImporter:
       name: glue_gunner_basic_03
       rect:
         serializedVersion: 2
-        x: 3028
+        x: 3029
         y: 960
-        width: 68
+        width: 67
         height: 112
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -909,7 +912,7 @@ TextureImporter:
         width: 82
         height: 87
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -930,7 +933,7 @@ TextureImporter:
         width: 82
         height: 87
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -951,7 +954,7 @@ TextureImporter:
         width: 121
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -972,7 +975,7 @@ TextureImporter:
         width: 121
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -980,6 +983,27 @@ TextureImporter:
       bones: []
       spriteID: 1277fcc6a0775c330800000000000000
       internalID: 3730518753005238049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glue_gunner_bloon_dissolver_gauge
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 748
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b1b1bc5e867caa0800000000000000
+      internalID: -6140824230732031208
       vertices: []
       indices: 
       edges: []

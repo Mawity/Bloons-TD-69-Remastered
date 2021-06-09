@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlayableCharacter : MonoBehaviour
+public abstract class PlayableCharacter
 {
     public Projectile _projectile;
 
