@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public PlayableCharacter character;
-
+    private PlayableCharacter activeMonkey;
+  
 
     // Start is called before the first frame update
     public void Start()
@@ -17,14 +16,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-
         float h = Input.GetAxis("Horizontal");
-
         Vector2 pos = transform.position;
-
-        pos.x += h * character.Speed * Time.deltaTime;
-
+        pos.x += h * activeMonkey.Speed * Time.deltaTime;
         transform.position = pos;
+
 
 
 
