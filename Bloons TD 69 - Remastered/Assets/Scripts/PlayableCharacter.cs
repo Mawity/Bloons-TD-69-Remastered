@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class PlayableCharacter : MonoBehaviour
 {
+    public Projectile _projectile;
+
+
     private float _speed;
 
     public float Speed
@@ -18,8 +21,6 @@ public abstract class PlayableCharacter : MonoBehaviour
             _speed = value;
         }
     }
-
-    private Projectile _proyectile;
 
     private float _attackSpeed;
 
@@ -36,7 +37,13 @@ public abstract class PlayableCharacter : MonoBehaviour
         }
     }
 
+    public PlayableCharacter(Projectile projectile ,float speed, float attackSpeed)
+    {
+        _projectile = projectile;
+        Speed = speed;
+        AttackSpeed = attackSpeed;
 
+    }
 
 
 

@@ -1,3 +1,4 @@
-﻿class Projectile
+﻿public class Projectile
 {
+
 }

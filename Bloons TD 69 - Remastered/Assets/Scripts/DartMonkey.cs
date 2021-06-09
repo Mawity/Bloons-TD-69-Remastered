@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DartMonkey : MonoBehaviour
+public class DartMonkey : PlayableCharacter
 {
+    public DartMonkey(Projectile projectile, float speed, float attackSpeed) : base(projectile, speed, attackSpeed)
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {
