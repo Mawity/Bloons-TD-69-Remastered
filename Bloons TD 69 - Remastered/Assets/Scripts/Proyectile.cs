@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Projectile
+public abstract class Projectile : MonoBehaviour
 {
-    private Transform transf;
-    private float _speed;
-    private int _dmg;
-    private int _pierce;
-    private bool _isExplosive;
-    private float _aoeRadius;
+    protected Vector2 _posInicial;
+    protected float _speed;
+    protected int _dmg;
+    protected int _pierce;
+    protected bool _isExplosive;
+    protected float _aoeRadius;
     //private Effect _effectOnBloon;
 
-    public void movement()
-    {
+    public abstract string Name { get; }
 
-    }
+    public abstract void Movement();
 
 
 

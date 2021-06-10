@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlayableCharacter
+public abstract class PlayableCharacter : MonoBehaviour
 {
     public Projectile _projectile;
 
-
     private float _speed;
+
+    private Vector2 _projectileSpawningPosition;
 
     public float Speed
     {
@@ -35,14 +36,6 @@ public abstract class PlayableCharacter
         {
             _attackSpeed = value;
         }
-    }
-
-    public PlayableCharacter(Projectile projectile ,float speed, float attackSpeed)
-    {
-        _projectile = projectile;
-        Speed = speed;
-        AttackSpeed = attackSpeed;
-
     }
 
 

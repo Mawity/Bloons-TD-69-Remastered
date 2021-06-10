@@ -7,6 +7,13 @@ public class MonkeySwitching : MonoBehaviour
     private int actualMonkey = 0;
     private int previousMonkey = 0;
 
+    public int ActualMonkey
+    {
+        get
+        {
+            return actualMonkey;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -17,23 +24,21 @@ public class MonkeySwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        previousMonkey = actualMonkey;
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            previousMonkey = actualMonkey;
             actualMonkey = 0;
         }else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            previousMonkey = actualMonkey;
             actualMonkey = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            previousMonkey = actualMonkey;
             actualMonkey = 2;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            previousMonkey = actualMonkey;
             actualMonkey = 3;
         }
 
@@ -42,7 +47,6 @@ public class MonkeySwitching : MonoBehaviour
             SelectMonkey();
         }
     }
-
 
     void SelectMonkey()
     {
@@ -60,5 +64,20 @@ public class MonkeySwitching : MonoBehaviour
 
             i++;
         }
+    }
+
+    public PlayableCharacter GetActualMonkey()
+    {
+        int i = 0;
+        foreach (Transform monkey in transform)
+        {
+            if (i == actualMonkey)
+            {
+                return monkey.gameObject;
+            }
+            i++;
+        }
+
+        return null;
     }
 }
